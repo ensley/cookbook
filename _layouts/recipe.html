@@ -68,3 +68,46 @@ layout: default
 		</aside>
 	</div>
 </main>
+
+{%- capture ingredient_list -%}
+	{%- for section in page.ingredients -%}
+		{%- if section[0] -%}
+		{%- for ingredient in section[1] -%}
+			{{ ingredient.quantity }} {{ ingredient.unit }} {{ ingredient.ingredient }}||
+		{%- endfor -%}
+		{%- else -%}
+			{{ section.quantity }} {{ section.unit }} {{ section.ingredient }}||
+		{%- endif -%}
+	{%- endfor -%}
+{%- endcapture -%}
+
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "Recipe",
+	"url": {{ page.url | absolute_url | jsonify }},
+	"name": {{ page.title | jsonify }},
+	"image": {% if page.image %}{{ page.image | prepend: site.url }}{% else %}["https://via.placeholder.com/320x180", "https://via.placeholder.com/280x210", "https://via.placeholder.com/250"]{% endif %},
+	"keywords": {% if page.tags %}{{ page.tags | jsonify }}{% else %}""{% endif %},
+	"cookTime": "PT{% if page.cookmins %}{{ page.cookmins | jsonify }}{% else %}0{% endif %}M",
+	"prepTime": "PT{% if page.prepmins %}{{ page.prepmins | jsonify }}{% else %}0{% endif %}M",
+	"aggregateRating": {
+		"@type": "AggregateRating",
+		"ratingCount": 1,
+		"ratingValue": 5
+	},
+	"recipeCategory": {% if page.categories %}{{ page.categories | jsonify }}{% else %}"Uncategorized"{% endif %},
+	"recipeCuisine": {% if page.cuisine %}{{ page.cuisine | jsonify }}{% else %}"Uncategorized"{% endif %},
+	"recipeYield": {% if page.servings %}{{ page.servings | jsonify }}{% else %}"N/A"{% endif %},
+	"recipeIngredient": {{ ingredient_list | split: "||" | jsonify }},
+	"recipeInstructions": [
+		{%- for instruction in page.instructions -%}
+			{
+				"@type": "HowToStep",
+				"text": {{ instruction | jsonify }}
+			}{%- unless forloop.last -%},{% endunless %}
+		{%- endfor -%}
+	],
+	"description": {{ page.excerpt | strip_newlines | strip | jsonify }}
+}
+</script>

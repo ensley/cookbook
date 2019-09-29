@@ -76,6 +76,12 @@ instructions:
   - Combine 1/3 cup vinegar and sugar; stir until sugar dissolves. Place salad greens on individual serving plates; drizzle with vinegar mixture. Slice and fan chicken, if desired, over salad greens. Top each serving with 1/2 cup mango salsa.
 
 categories: entree
+tags: 
+  - salad
+  - chicken salad
+  - healthy
+cuisine:
+  - American
 ---
 
 This recipe comes from *The Ultimate Southern Living Cookbook*, page 368. A really good ripe mango makes the salsa incredible.

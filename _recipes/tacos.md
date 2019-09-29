@@ -27,8 +27,11 @@ instructions:
   - Cover the tortillas with a damp paper towel and microwave for 10 seconds.
   - Assemble the tacos with the shredded cheese, salsa, sour cream, and lettuce.
 
-categories: [entree, quick]
-tags: []
+categories: entree
+tags:
+  - quick
+cuisine:
+  - Tex-Mex
 ---
 
 We like to use the leanest meat we can get in these tacos. The taco seasoning packets provide plenty of flavor, and the less fat there is in the meat the less juice there is to drain out of the pan.

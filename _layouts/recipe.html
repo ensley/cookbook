@@ -1,0 +1,70 @@
+---
+layout: default
+---
+<main class="container">
+	<div class="row mb-5">
+		<div class="col-md-8 d-flex flex-column justify-content-end">
+			<h1 class="display-1 mb-0 recipe-title">{{ page.title }}</h1>
+		</div>
+		<div class="col-md-4 d-flex flex-column justify-content-end border-left">
+			{% if page.servings %}
+			<h5 class="recipe-header">Serves {{ page.servings }}</h5>
+			{% endif %}
+			{% if page.leftover_nights %}
+			<h5 class="recipe-header">Nights of leftovers: {{ page.leftover_nights }}</h5>
+			{% endif %}
+			{% if page.cookmins %}
+			<h5 class="recipe-header">Cook time: {{ page.cookmins }} mins</h5>
+			{% endif %}
+			{% if page.prepmins %}
+			<h5 class="mb-3 recipe-header">Prep time: {{ page.prepmins }} mins</h5>
+			{% endif %}
+		</div>
+	</div>
+
+	<div class="row mb-5">
+		<div class="col-md-4">
+			{% if page.image %}<img src="{{ page.image | prepend: site.baseurl }}" alt="" class="img-fluid">{% endif %}
+		</div>
+		<div class="col-md-8 recipe-primary lead">
+			{{ content }}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8">
+			<div>
+				<h3 class="mb-3 recipe-header">Instructions</h3>
+				<ol class="recipe-instructions">
+					{% for instruction in page.instructions %}
+						<li class="recipe-primary instruction">
+							{{ instruction | markdownify }}
+						</li>
+					{% endfor %}
+				</ol>
+			</div>
+		</div>
+		<aside class="col-md-4">
+			<div class="container">
+				<h3 class="mb-3 recipe-header">Ingredients</h3>
+				{% for section in page.ingredients %}
+				{% if section[0] %}
+				<h4 class="recipe-secondary mt-3">For the {{ section[0] }}</h4>
+				{% for ingredient in section[1] %}
+				<dl class="row m-0 recipe-secondary">
+					{% if ingredient.quantity %}<dt class="col-sm-auto pl-0 pr-2">{{ ingredient.quantity }}</dt>{% endif %}
+					{% if ingredient.unit %}<dt class="col-sm-auto pl-0">{{ ingredient.unit }}</dt>{% endif %}
+					<dd class="col-sm-auto pl-0">{{ ingredient.ingredient }}</dd>
+				</dl>
+				{% endfor %}
+				{% else %}
+				<dl class="row m-0 recipe-secondary">
+					{% if section.quantity %}<dt class="col-sm-auto pl-0 pr-2">{{ section.quantity }}</dt>{% endif %}
+					{% if section.unit %}<dt class="col-sm-auto pl-0">{{ section.unit }}</dt>{% endif %}
+					<dd class="col-sm-auto pl-0">{{ section.ingredient }}</dd>
+				</dl>
+				{% endif %}
+				{% endfor %}
+			</div>
+		</aside>
+	</div>
+</main>

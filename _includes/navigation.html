@@ -8,10 +8,10 @@
 	</header>
 	<div class="nav-scroller py-1 border-bottom border-top mb-3">
 		<nav class="nav d-flex justify-content-between">
-			<a href="/" class="p-2 text-muted">Home</a>
+			<a href="/" class="p-2 text-muted recipe-secondary" style="font-size: 1.25rem;">Home</a>
 			{% assign categories = site.recipes | map: 'categories' | join: ',' | split: ',' | group_by: category %}
 			{% for category in categories %}
-				<a href="{{ category.name }}" class="p-2 text-muted">{{ category.name | capitalize}}</a>
+				<a href="{{ category.name }}" class="p-2 text-muted recipe-secondary" style="font-size: 1.25rem;">{{ category.name | capitalize}}</a>
 			{% endfor %}
 		</nav>
 	</div>

@@ -6,7 +6,7 @@ layout: default
 	{% for recipe in site.recipes %}
 		{% assign name_parts = page.name | split: '.' %}
 		{% if recipe.categories contains name_parts[0] %}
-			<h3><a href="{{ recipe.url }}">{{ recipe.title }}</a></h3>
+			<h3 class="recipe-title"><a href="{{ recipe.url }}">{{ recipe.title }}</a></h3>
 		{% endif %}
 	{% endfor %}
 </div>

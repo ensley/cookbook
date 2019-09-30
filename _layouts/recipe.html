@@ -37,7 +37,7 @@ layout: default
 				<ol class="recipe-instructions">
 					{% for instruction in page.instructions %}
 						<li class="recipe-primary instruction">
-							{{ instruction | markdownify }}
+							{{ instruction | markdownify | remove: '<p>' | remove: '</p>' }}
 						</li>
 					{% endfor %}
 				</ol>

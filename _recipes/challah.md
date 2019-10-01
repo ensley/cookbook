@@ -59,4 +59,6 @@ tags:
 cuisine:
   - Mediterranean
 ---
+This recipe is from *Modern Jewish Baker: Challah, Babka, Bagels & More* by Shannon Sarna.
+
 The high altitude really seems to mess with this recipe. I've had trouble with the dough being super sticky and not coming together. Sometimes I can save it by adding an extra half a cup or so of flour, but not always. If you're at altitude, good luck.

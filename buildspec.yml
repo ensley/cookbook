@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      ruby: 2.6
+    commands:
+      - gem install jekyll
+  build:
+    commands:
+      - echo "********* Building Jekyll Site *********"
+      - jekyll build
+      - echo "*********   Uploading to S3    *********"
+      - aws s3 sync _site/ s3://john-ensley.com

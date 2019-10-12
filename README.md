@@ -1,4 +1,5 @@
 # cookbook
-A collection of recipes we like to make
 
 ![CodeBuild](https://codebuild.us-west-2.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiN3B1MWdrMm16c1FGaXM1VXN5VEFTaTRtbmNlV0pKd1dOUTc0ZS9qZnBJalJOa1lCZTJQN3VMUi9nY2JPeHFENGpLcmRNV2RkNnB2VTBJUTVoSFFjNzhBPSIsIml2UGFyYW1ldGVyU3BlYyI6IlFBZVhVanZPc21aWEJYdjciLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=master)
+
+A collection of recipes we like to make

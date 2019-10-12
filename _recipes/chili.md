@@ -45,4 +45,7 @@ ingredients:
   - quantity: 8
     unit: oz
     ingredient: beer
+
+categories: entree
+cuisine: American
 ---

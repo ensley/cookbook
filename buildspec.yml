@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       ruby: 2.6
     commands:
-      - gem install jekyll
+      - gem install jekyll bundler
   build:
     commands:
       - echo "********* Building Jekyll Site *********"

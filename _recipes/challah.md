@@ -1,6 +1,6 @@
 ---
 layout: recipe
-title: Basic Challah
+title: Challah
 
 servings: 2 loaves
 

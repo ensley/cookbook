@@ -4,10 +4,10 @@ layout: default
 {% assign categories = site.recipes | map: 'categories' | join: ',' | split: ',' | group_by: category %}
 <div class="container">
 	{% for category in categories %}
-	<h1 class="recipe-title mt-4">{{ category.name | capitalize }} ({{ category.size }})</h1>
+	<h1 class="recipe-secondary mt-4 text-muted">{{ category.name | capitalize }} ({{ category.size }})</h1>
 	{% for recipe in site.recipes %}
 		{% if recipe.categories contains category.name %}
-			<h3><a href="{{ recipe.url }}">{{ recipe.title }}</a></h3>
+			<h3 class="recipe-title"><a href="{{ recipe.url }}">{{ recipe.title }}</a></h3>
 		{% endif %}
 	{% endfor %}
 {% endfor %}

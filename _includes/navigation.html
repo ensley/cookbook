@@ -1,17 +1,28 @@
-<div class="container">
-	<header class="cookbook-header py-3">
+<div class="container d-flex h-100 p-3 mx-auto flex-column">
+<!-- 	<header class="cookbook-header py-3">
 		<div class="row flex-nowrap justify-content-center align-items-center">
 			<div class="col-md-4 text-center">
 				<a href="/" class="cookbook-header-logo recipe-title">Cookbook</a>
 			</div>
 		</div>
+	</header> -->
+	<header class="masthead mb-auto">
+		<div class="inner">	
+			<h3 class="masthead-brand">John Ensley</h3>
+			<nav class="nav nav-masthead justify-content-center">
+				<a class="nav-link" href="https://john-ensley.com">Home</a>
+				<a class="nav-link" href="https://blog.john-ensley.com">Blog</a>
+				<a class="nav-link" href="https://photos.john-ensley.com">Photography</a>
+				<a class="nav-link active" href="https://cookbook.john-ensley.com">Cookbook</a>
+			</nav>
+		</div>
 	</header>
 	<div class="nav-scroller py-1 border-bottom border-top mb-3">
 		<nav class="nav d-flex justify-content-between">
-			<a href="/" class="p-2 text-muted recipe-secondary" style="font-size: 1.25rem;">Home</a>
+			<a href="/" class="nav-link active p-2 recipe-secondary" style="font-size: 1.25rem;">Home</a>
 			{% assign categories = site.recipes | map: 'categories' | join: ',' | split: ',' | group_by: category %}
 			{% for category in categories %}
-				<a href="{{ category.name }}" class="p-2 text-muted recipe-secondary" style="font-size: 1.25rem;">{{ category.name | capitalize}}</a>
+			<a href="{{ category.name }}.html" class="nav-link p-2 recipe-secondary" style="font-size: 1.25rem;">{{ category.name | capitalize}}</a>
 			{% endfor %}
 		</nav>
 	</div>

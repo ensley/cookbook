@@ -1,7 +1,7 @@
 ---
 layout: recipe
 title: Tacos
-image: /assets/img/taco.jpg
+image: /assets/img/sm/taco.jpg
 
 servings: 4
 leftover_nights: 1

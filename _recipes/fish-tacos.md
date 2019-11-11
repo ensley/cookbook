@@ -1,7 +1,7 @@
 ---
 layout: recipe
 title: Fish Tacos
-image: /assets/img/fish-taco.jpg
+image: /assets/img/sm/fish-taco.jpg
 
 servings: 4 (12 tacos)
 cookmins: 10

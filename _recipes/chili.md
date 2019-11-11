@@ -13,9 +13,9 @@ ingredients:
   - quantity: 1
     unit: tbsp
     ingredient: cumin
-  - quantity: 2
+  - quantity: 3
     unit: tbsp
-    ingredient: chili powder
+    ingredient: chili powder, divided
   - quantity: 1/2
     ingredient: onion, diced
   - quantity: 4
@@ -45,6 +45,12 @@ ingredients:
   - quantity: 8
     unit: oz
     ingredient: beer
+
+instructions:
+  - In a large pot, cook the meat with cumin and 2 tablespoons of chili powder. Drain the fat and add the other tablespoon of chili powder.
+  - Add onion, garlic, and salsa and continue cooking until the onion begins to soften.
+  - Add tomatoes, beans, and corn and bring to a simmer. Let simmer **30-60 minutes**.
+  - Add beer in the last 10 minutes of simmering.
 
 categories: entree
 cuisine: American

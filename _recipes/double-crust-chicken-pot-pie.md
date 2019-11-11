@@ -1,7 +1,7 @@
 ---
 layout: recipe
 title: Double-Crust Chicken Pot Pie
-image: /assets/img/chicken-pot-pie.jpg
+image: /assets/img/sm/chicken-pot-pie.jpg
 
 servings: 6
 cookmins: 60
@@ -66,7 +66,8 @@ ingredients:
 
 instructions:
   - Allow the pie crusts to come to room temperature as instructed by the packaging.
-  - Melt butter in a large skillet over medium-high heat. Cook chicken and onion in the butter, stirring constantly, until chicken is browned and onion is tender. Stir in these ingredients: celery, corn, carrots, potato, chicken broth, white wine, parsley, pepper, and bay leaf. Bring to a boil; cover, reduce heat, and simmer **15 minutes** or until vegetables are tender. Discard bay leaf.
+  - >
+    Melt butter in a large skillet over medium-high heat. Cook chicken and onion in the butter, stirring constantly, until chicken is browned and onion is tender. Stir in these ingredients: celery, corn, carrots, potato, chicken broth, white wine, parsley, pepper, and bay leaf. Bring to a boil; cover, reduce heat, and simmer **15 minutes** or until vegetables are tender. Discard bay leaf.
   - Combine cornstarch and water, stirring until smooth; add to chicken mixture. Bring to a boil over medium heat, stirring constantly. Remove from heat; stir in soup, cheese, and sour cream.
   - Fit one of the pie crusts into a pie dish. Spoon chicken mixture into crust. Place remaining crust over chicken mixture; trim, seal, and crimp edges. Cut slits in pastry. Combine egg yolk and milk; brush over pastry.
   - Bake at 400°F for **35 minutes** or until golden, shielding pastry with aluminum foil during last 5 minutes to prevent excessive browning, if necessary.

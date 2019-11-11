@@ -1,6 +1,7 @@
 ---
 layout: recipe
 title: Challah
+image: /assets/img/sm/challah.jpg
 
 servings: 2 loaves
 
